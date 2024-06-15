@@ -2,7 +2,7 @@ class BankAccount:
     def __init__(self, name, account_number, balance=0):
         self.__name = name
         self.__account_number = account_number
-        self.__balance = balance  # private attribute
+        self.__balance = balance 
 
     def deposit(self, amount):
         self.__balance += amount
@@ -71,7 +71,7 @@ class ATM:
             else:
                 print("Invalid choice. Please try again.")
 
-# Example usage
+
 account = BankAccount("Alice", "123456", 1000)
 atm = ATM(account)
 atm.run()
